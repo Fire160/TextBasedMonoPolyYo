@@ -1,6 +1,18 @@
 
 public abstract class Square
 	{
-	protected String name;
-	public abstract void runSquare();
+	private String name;
+	public Square(String s)
+		{
+		name = s;
+		}
+	public String getName()
+		{
+		return name;
+		}
+
+	public void setName(String name)
+		{
+		this.name = name;
+		}
 	}

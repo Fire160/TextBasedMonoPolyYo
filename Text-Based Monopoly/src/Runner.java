@@ -11,6 +11,15 @@ public class Runner
 		{
 		ArrayList<Square> b = new ArrayList<Square>();
 		b.add(new Go());
+		b.add(new ());
+		b.add(new ());
+		b.add(new ());
+		b.add(new ());
+		b.add(new ());
+		b.add(new ());
+		b.add(new ());
+		b.add(new Color("Vermont Ave.", ));
+		b.add(new Color("Connecticut Ave.", 1, 1, 1, 1, 1, 1, 1));
 		return b;
 		}
 	}

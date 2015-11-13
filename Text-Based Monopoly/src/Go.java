@@ -3,7 +3,7 @@ public class Go extends Square
 	{
 	public Go()
 		{
-		name = "Go";
+		setName("Go");
 		}
 	public void runSquare()
 		{
