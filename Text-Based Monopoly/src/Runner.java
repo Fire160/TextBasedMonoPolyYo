@@ -15,10 +15,10 @@ public class Runner
 		b.add(new ());
 		b.add(new ());
 		b.add(new ());
-		b.add(new ());
-		b.add(new ());
-		b.add(new ());
-		b.add(new Color("Vermont Ave.", ));
+		b.add(new Railroad());
+		b.add(new Color());
+		b.add(new Card());
+		b.add(new Color("Vermont Ave.", 1 ,1,1,1,1,1,1));
 		b.add(new Color("Connecticut Ave.", 1, 1, 1, 1, 1, 1, 1));
 		return b;
 		}
