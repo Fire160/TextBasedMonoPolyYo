@@ -16,6 +16,7 @@ public class Runner
 			Movement.playerMove(persons, 0, board);
 			things.nextLine();
 			}
+		things.close();
 		}
 	public static ArrayList<Square> makeBoard()
 		{
@@ -32,32 +33,32 @@ public class Runner
 		b.add(new Color("Connecticut Ave.", 1, 1, 1, 1, 1, 1, 0));
 		
 		b.add(new Jail());
-		b.add(new Color("Mediteranean Ave.", 0, 0, 0, 0, 0, 0, 0));
+		b.add(new Color("St. Charles Ave.", 0, 0, 0, 0, 0, 0, 0));
 		b.add(new Utility("Electric Company"));
-		b.add(new Color("Baltic Ave.", 0, 0, 0, 0, 0, 0, 0));
-		b.add(new Tax("Income Tax"));
+		b.add(new Color("States Ave.", 0, 0, 0, 0, 0, 0, 0));
+		b.add(new Color("Virginia Ave.", 0, 0, 0, 0, 0, 0, 0));
 		b.add(new Railroad("Pensylvania Railroad"));
-		b.add(new Color("Oriental Ave.", 0, 0, 0, 0, 0, 0, 0));
+		b.add(new Color("St. James Ave.", 0, 0, 0, 0, 0, 0, 0));
 		b.add(new Card("Community Chest"));
-		b.add(new Color("Vermont Ave.", 1 , 1, 1, 1, 1, 1, 0));
-		b.add(new Color("Connecticut Ave.", 1, 1, 1, 1, 1, 1, 0));
+		b.add(new Color("Tennessee Ave.", 1 , 1, 1, 1, 1, 1, 0));
+		b.add(new Color("New York Ave.", 1, 1, 1, 1, 1, 1, 0));
 		
 		b.add(new FreeParking());
-		b.add(new Color("Mediteranean Ave.", 0, 0, 0, 0, 0, 0, 0));
+		b.add(new Color("Kentucky Ave.", 0, 0, 0, 0, 0, 0, 0));
 		b.add(new Card("Chance"));
-		b.add(new Color("Baltic Ave.", 0, 0, 0, 0, 0, 0, 0));
-		b.add(new Tax("Income Tax"));
+		b.add(new Color("Indiana Ave.", 0, 0, 0, 0, 0, 0, 0));
+		b.add(new Color("Illinois Ave.", 0, 0, 0, 0, 0, 0, 0));
 		b.add(new Railroad("B & O Railroad"));
-		b.add(new Color("Oriental Ave.", 0, 0, 0, 0, 0, 0, 0));
-		b.add(new Card("Chance"));
-		b.add(new Color("Vermont Ave.", 1 , 1, 1, 1, 1, 1, 0));
-		b.add(new Color("Connecticut Ave.", 1, 1, 1, 1, 1, 1, 0));
+		b.add(new Color("Atlanic Ave.", 0, 0, 0, 0, 0, 0, 0));
+		b.add(new Color("Ventner Ave.", 0, 0, 0, 0, 0, 0, 0));
+		b.add(new Utility("Water Works"));
+		b.add(new Color("Marvin Gardens", 1, 1, 1, 1, 1, 1, 0));
 		
 		b.add(new GoToJail());
-		b.add(new Color("Mediteranean Ave.", 0, 0, 0, 0, 0, 0, 0));
-		b.add(new Color("Mediteranean Ave.", 0, 0, 0, 0, 0, 0, 0));
+		b.add(new Color("Pacific Ave.", 0, 0, 0, 0, 0, 0, 0));
+		b.add(new Color("North Carolina Ave.", 0, 0, 0, 0, 0, 0, 0));
 		b.add(new Card("Community Chest"));
-		b.add(new Tax("Income Tax"));
+		b.add(new Color("Pennsylvania Ave.", 0, 0, 0, 0, 0, 0, 0));
 		b.add(new Railroad("Short Line"));
 		b.add(new Card("Chance"));
 		b.add(new Color("Park Place", 0, 0, 0, 0, 0, 0, 0));
