@@ -8,7 +8,7 @@ public class Color extends Property
 	private int quadHouseRent;
 	private int HotelRent;
 	private int numOfHouse;
-	public Color(String n, int y, int u, int i, int o, int p, int a, int s, int q)
+	public Color(String n, int y, int u, int i, int o, int p, int a, int q)
 		{
 		setName(n);
 		baseRent = y;
@@ -17,9 +17,9 @@ public class Color extends Property
 		triHouseRent = o;
 		quadHouseRent = p;
 		HotelRent = a;
-		mortgauge = s;
 		numOfHouse = 0;
 		price = q;
+		mortgauge = price / 2;
 		}
 	public void runSquare()
 		{

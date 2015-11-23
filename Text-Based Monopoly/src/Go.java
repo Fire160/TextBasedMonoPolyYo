@@ -7,5 +7,6 @@ public class Go extends Square
 		}
 	public void runSquare()
 		{
+		System.out.println("You landed on GO!");
 		}
 	}

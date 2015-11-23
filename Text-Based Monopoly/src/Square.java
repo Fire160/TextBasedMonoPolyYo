@@ -1,7 +1,7 @@
 
 public abstract class Square
 	{
-	private String name;
+	protected String name;
 	public String getName()
 		{
 		return name;
@@ -10,4 +10,5 @@ public abstract class Square
 		{
 		this.name = name;
 		}
+	protected abstract void runSquare();
 	}

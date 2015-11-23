@@ -13,11 +13,11 @@ public class Movement
 			{
 			doubles++;
 			}
-		for(int i = 0; i < b.size(); i++)
+		for(int i = 0; i < roll; i++)
 			{
 			if(players.get(player).getSpot() >= b.size())
 				{
-				players.get(player).getSpot() = 0;
+				players.get(player).setSpot(0);
 				}
 			else
 				{
