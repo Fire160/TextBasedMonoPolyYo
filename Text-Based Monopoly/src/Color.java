@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Color extends Property
 	{
@@ -20,8 +21,9 @@ public class Color extends Property
 		numOfHouse = 0;
 		price = q;
 		mortgauge = price / 2;
+		isOwned = false;
 		}
-	public void runSquare()
+	public void runProperty(ArrayList<Player> players, int player, ArrayList<Square> b)
 		{
 		
 		}
@@ -33,7 +35,6 @@ public class Color extends Property
 		{
 		this.baseRent = baseRent;
 		}
-	
 	public int getHouseRent()
 		{
 		return houseRent;
@@ -44,42 +45,42 @@ public class Color extends Property
 		}
 	public int getDiHouseRent()
 		{
-			return diHouseRent;
+		return diHouseRent;
 		}
 	public void setDiHouseRent(int diHouseRent)
 		{
-			this.diHouseRent = diHouseRent;
+		this.diHouseRent = diHouseRent;
 		}
 	public int getTriHouseRent()
 		{
-			return triHouseRent;
+		return triHouseRent;
 		}
 	public void setTriHouseRent(int triHouseRent)
 		{
-			this.triHouseRent = triHouseRent;
+		this.triHouseRent = triHouseRent;
 		}
 	public int getQuadHouseRent()
 		{
-			return quadHouseRent;
+		return quadHouseRent;
 		}
 	public void setQuadHouseRent(int quadHouseRent)
 		{
-			this.quadHouseRent = quadHouseRent;
+		this.quadHouseRent = quadHouseRent;
 		}
 	public int getHotelRent()
 		{
-			return HotelRent;
+		return HotelRent;
 		}
 	public void setHotelRent(int hotelRent)
 		{
-			HotelRent = hotelRent;
+		HotelRent = hotelRent;
 		}
 	public int getNumOfHouse()
 		{
-			return numOfHouse;
+		return numOfHouse;
 		}
 	public void setNumOfHouse(int numOfHouse)
 		{
-			this.numOfHouse = numOfHouse;
+		this.numOfHouse = numOfHouse;
 		}
 	}

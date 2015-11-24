@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Jail extends Square
 	{
@@ -5,9 +6,8 @@ public class Jail extends Square
 		{
 		name = "Jail";
 		}
-	protected void runSquare()
+	public void runSquare(ArrayList<Player> players, int player, ArrayList<Square> b)
 		{
-
+		
 		}
-
 	}

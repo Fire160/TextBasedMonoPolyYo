@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public abstract class Square
 	{
@@ -10,5 +11,5 @@ public abstract class Square
 		{
 		this.name = name;
 		}
-	protected abstract void runSquare();
+	protected abstract void runSquare(ArrayList<Player> players,int player, ArrayList<Square> b);
 	}

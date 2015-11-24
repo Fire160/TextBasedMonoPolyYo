@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Card extends Square
 	{
@@ -5,9 +6,9 @@ public class Card extends Square
 		{
 		name = n;
 		}
-	public void runSquare()
+	public void runSquare(ArrayList<Player> players, int player, ArrayList<Square> b)
 		{
-		if(name.contains("Chance"));
+		
 		}
 	}
 //8 4 1 6 9 3 2

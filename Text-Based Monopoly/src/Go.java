@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Go extends Square
 	{
@@ -5,8 +6,7 @@ public class Go extends Square
 		{
 		setName("Go");
 		}
-	public void runSquare()
+	public void runSquare(ArrayList<Player> players, int player, ArrayList<Square> b)
 		{
-		System.out.println("You landed on GO!");
 		}
 	}

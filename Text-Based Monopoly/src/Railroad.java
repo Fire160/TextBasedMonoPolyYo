@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Railroad extends Property
 	{
@@ -7,7 +8,7 @@ public class Railroad extends Property
 		price = 200;
 		mortgauge = price / 2;
 		}
-	public void runSquare()
+	public void runProperty(ArrayList<Player> players, int player, ArrayList<Square> b)
 		{
 		
 		}

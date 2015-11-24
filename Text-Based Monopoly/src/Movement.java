@@ -2,32 +2,39 @@ import java.util.ArrayList;
 
 public class Movement
 	{
-	public static void playerMove(ArrayList<Player> players,int player, ArrayList<Square> b)
+	public static void playerMove(ArrayList<Player> players, ArrayList<Square> b)
 		{
-		System.out.println("You are on "  + b.get(players.get(player).getSpot()).getName());
-		int dieO = (int) (Math.random()*6) + 1;
-		int dieT = (int) (Math.random()*6) + 1;
-		int roll = dieO + dieT;
-		//int doubles = 0;
-		System.out.println("You rolled a " + dieO + " and a " + dieT + " for a total of " + roll);
-		if(dieO == dieT)
+		int doubles = 0;
+		for(int g =0; g < players.size(); g++)
 			{
-			//doubles++;
-			}
-		for(int i = 0; i < roll; i++)
-			{
-			if(players.get(player).getSpot() >= b.size() - 1)
+			System.out.println("You are on "  + b.get(players.get(g).getSpot()).getName() + ". Press anything to roll the dice!");
+			Runner.things.nextLine();
+			int dieO = (int) (Math.random()*6) + 1;
+			int dieT = (int) (Math.random()*6) + 1;
+			int roll = dieO + dieT;
+			if(dieO == dieT)
+				{doubles++;}
+			if(doubles == 3)
 				{
-				players.get(player).setSpot(0);
-				System.out.println("You passed GO and got $200!");
-				players.get(player).setMoney(players.get(player).getMoney() + 200);
-				System.out.println("You now have " + players.get(player).getMoney());
+				System.out.println("Three doubles! Go To Jail!");
 				}
-			else
+			System.out.println("You rolled a " + dieO + " and a " + dieT + " for a total of " + roll);
+			for(int i = 0; i < roll; i++)
 				{
-				players.get(player).setSpot(players.get(player).getSpot() + 1);
+				if(players.get(g).getSpot() >= b.size() - 1)
+					{
+					players.get(g).setSpot(0);
+					System.out.println("You passed GO and got $200!");
+					players.get(g).setMoney(players.get(g).getMoney() + 200);
+					System.out.println("You now have " + players.get(g).getMoney());
+					}
+				else
+					{
+					players.get(g).setSpot(players.get(g).getSpot() + 1);
+					}
 				}
+			System.out.println("You landed on " + b.get(players.get(g).getSpot()).getName());
+			b.get(players.get(g).getSpot()).runSquare(players, g, b);
 			}
-		System.out.println("You landed on " + b.get(players.get(player).getSpot()).getName());
 		}
 	}

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Tax extends Square
 	{
@@ -5,9 +6,8 @@ public class Tax extends Square
 		{
 		name = n;
 		}
-	public void runSquare()
+	public void runSquare(ArrayList<Player> players, int player, ArrayList<Square> b)
 		{
-
+		
 		}
-
 	}
