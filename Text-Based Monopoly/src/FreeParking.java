@@ -6,7 +6,7 @@ public class FreeParking extends Square
 		{
 		name = "Free Parking";
 		}
-	public void runSquare(ArrayList<Player> players, int player, ArrayList<Square> b)
+	public void runSquare(ArrayList<Player> players,int player, ArrayList<Square> b, int place)
 		{
 		}
 	}

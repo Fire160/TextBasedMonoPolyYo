@@ -11,5 +11,5 @@ public abstract class Square
 		{
 		this.name = name;
 		}
-	protected abstract void runSquare(ArrayList<Player> players,int player, ArrayList<Square> b);
+	protected abstract void runSquare(ArrayList<Player> players,int player, ArrayList<Square> b, int place);
 	}

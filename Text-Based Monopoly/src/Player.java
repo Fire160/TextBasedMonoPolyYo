@@ -2,17 +2,15 @@ import java.util.ArrayList;
 
 public class Player
 	{
-	private int money, playerNum;
+	private int money, playerNum, spot;
 	private String playerName;
-	private int spot;
-	private ArrayList<Property> properties;
-	public Player(int i, String o)
+	private ArrayList<Square> properties;
+	public Player(String o)
 		{
-		money = 500;
-		playerNum = i;
+		money = 1500;
 		playerName = o;
 		spot = 0;
-		properties = new ArrayList<Property>();
+		properties = new ArrayList<Square>();
 		}
 	public int getSpot()
 		{
@@ -46,15 +44,15 @@ public class Player
 		{
 		this.money = money;
 		}
-	public ArrayList<Property> getProperties()
+	public ArrayList<Square> getProperties()
 		{
 		return properties;
 		}
-	public void setProperties(ArrayList<Property> properties)
+	public void setProperties(ArrayList<Square> properties)
 		{
 		this.properties = properties;
 		}
-	public void addProperty(Property temp)
+	public void addProperty(Square temp)
 		{
 		properties.add(temp);
 		}

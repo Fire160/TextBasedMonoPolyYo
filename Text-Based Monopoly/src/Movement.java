@@ -7,6 +7,9 @@ public class Movement
 		int doubles = 0;
 		for(int g =0; g < players.size(); g++)
 			{
+			System.out.println("+-----(PLAYER " + (g+1) + "'s TURN)-----+");
+			System.out.println("Your current money: " + players.get(g).getMoney());
+			System.out.println("Your current Properties: " + players.get(g).getProperties().toString());
 			System.out.println("You are on "  + b.get(players.get(g).getSpot()).getName() + ". Press anything to roll the dice!");
 			Runner.things.nextLine();
 			int dieO = (int) (Math.random()*6) + 1;
@@ -34,7 +37,8 @@ public class Movement
 					}
 				}
 			System.out.println("You landed on " + b.get(players.get(g).getSpot()).getName());
-			b.get(players.get(g).getSpot()).runSquare(players, g, b);
+			b.get(players.get(g).getSpot()).runSquare(players, g, b, players.get(g).getSpot());
+			Runner.things.nextLine();
 			}
 		}
 	}

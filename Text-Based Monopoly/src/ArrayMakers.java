@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ArrayMakers
 	{
@@ -52,8 +53,16 @@ public class ArrayMakers
 		}
 	public static ArrayList<Player> makePlayers()
 		{
+		Scanner stuff = new Scanner(System.in);
+		System.out.println("How many players?");
+		int pN = Runner.things.nextInt();
 		ArrayList<Player> p = new ArrayList<Player>();
-		p.add(new Player(1500, "Michael"));
+		for(int o = 0; o < pN; o++)
+			{
+			System.out.println("Player " + (o+1) + "'s name?");
+			String name = stuff.nextLine();
+			p.add(new Player(name));
+			}
 		return p;
 		}
 	}

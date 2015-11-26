@@ -6,7 +6,7 @@ public class Go extends Square
 		{
 		setName("Go");
 		}
-	public void runSquare(ArrayList<Player> players, int player, ArrayList<Square> b)
+	public void runSquare(ArrayList<Player> players,int player, ArrayList<Square> b, int place)
 		{
 		}
 	}

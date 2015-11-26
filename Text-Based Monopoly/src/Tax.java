@@ -6,7 +6,7 @@ public class Tax extends Square
 		{
 		name = n;
 		}
-	public void runSquare(ArrayList<Player> players, int player, ArrayList<Square> b)
+	public void runSquare(ArrayList<Player> players,int player, ArrayList<Square> b, int place)
 		{
 		
 		}

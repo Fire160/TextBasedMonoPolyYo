@@ -6,7 +6,7 @@ public abstract class Property extends Square
 	protected boolean isOwned;
 	protected int owner;
 	public abstract void runProperty(ArrayList<Player> players,int player, ArrayList<Square> b);
-	public void runSquare(ArrayList<Player> players,int player, ArrayList<Square> b, int t)
+	public void runSquare(ArrayList<Player> players,int player, ArrayList<Square> b, int place)
 		{
 		if(isOwned == true)
 			{
@@ -19,17 +19,13 @@ public abstract class Property extends Square
 			if(g == 1 && players.get(player).getMoney() >= price)
 				{
 				System.out.println("Congrats you now own " + name + "!");
-				System.out.println("Your current money: " + players.get(player).getMoney());
 				players.get(player).setMoney(players.get(player).getMoney() - price);
 				isOwned = true;
-				players.get(player).addProperty(b.get(t));
-				players.get(player).getMoney();
-				Runner.things.nextLine();
+				players.get(player).addProperty(b.get(place));
 				}
 			else if(g == 1)
 				{
 				System.out.println("Sorry you don't have enough money! :(");
-				System.out.println("Your current money: " + players.get(player).getMoney());
 				}
 			}
 		}

@@ -6,7 +6,7 @@ public class Jail extends Square
 		{
 		name = "Jail";
 		}
-	public void runSquare(ArrayList<Player> players, int player, ArrayList<Square> b)
+	public void runSquare(ArrayList<Player> players,int player, ArrayList<Square> b, int place)
 		{
 		
 		}

@@ -6,9 +6,9 @@ public class Card extends Square
 		{
 		name = n;
 		}
-	public void runSquare(ArrayList<Player> players, int player, ArrayList<Square> b)
+	public void runSquare(ArrayList<Player> players,int player, ArrayList<Square> b, int place)
 		{
-		
+		System.out.println("Noob");
 		}
 	}
 //8 4 1 6 9 3 2
