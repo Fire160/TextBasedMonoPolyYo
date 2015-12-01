@@ -44,9 +44,14 @@ public class Player
 		{
 		this.money = money;
 		}
-	public ArrayList<Square> getProperties()
+	public int getProperties()
 		{
-		return properties;
+		for(int i = 0; i < properties.size(); i++)
+			{
+			System.out.print(properties.get(i).getName() + ", ");
+			}
+		System.out.println();
+		return properties.size();
 		}
 	public void setProperties(ArrayList<Square> properties)
 		{
