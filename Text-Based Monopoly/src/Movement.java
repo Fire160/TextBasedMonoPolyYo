@@ -8,7 +8,7 @@ public class Movement
 		for(int g =0; g < players.size(); g++)
 			{
 			System.out.println("+-----(" + players.get(g).getPlayerName() + "'s Turn)-----+");
-			System.out.println("Your current money: " + players.get(g).getMoney());
+			System.out.println("Your current credits: " + players.get(g).getMoney());
 			System.out.println("Your current Properties: " + players.get(g).getProperties());
 			System.out.println("You are on "  + b.get(players.get(g).getSpot()).getName() + ". Press anything to roll the dice!");
 			Runner.things.nextLine();

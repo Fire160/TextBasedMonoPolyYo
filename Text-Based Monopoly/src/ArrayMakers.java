@@ -18,21 +18,21 @@ public class ArrayMakers
 		b.add(new Color("Hoth North Ridge", 1, 1, 1, 1, 1, 1, 120));
 		
 		b.add(new Jail());
-		b.add(new Color("Tatooine Van's Homestand", 0, 0, 0, 0, 0, 0, 140));
+		b.add(new Color("Tatooine Lar's Homestand", 0, 0, 0, 0, 0, 0, 140));
 		b.add(new Utility("Reactor Core"));
 		b.add(new Color("Tatooine Mos Esiley", 0, 0, 0, 0, 0, 0, 140));
 		b.add(new Color("Tatooine Jaba's Palace", 0, 0, 0, 0, 0, 0, 160));
 		b.add(new Railroad("Millenium Falcon"));
-		b.add(new Color("Yavin Four", 0, 0, 0, 0, 0, 0, 180));
+		b.add(new Color("Yavin Four War Room", 0, 0, 0, 0, 0, 0, 180));
 		b.add(new Card("Rebel Card"));
-		b.add(new Color("Tennessee Ave", 1 , 1, 1, 1, 1, 1, 180));
-		b.add(new Color("New York Ave", 1, 1, 1, 1, 1, 1, 200));
+		b.add(new Color("Yavin Four Massassi Temple", 1 , 1, 1, 1, 1, 1, 180));
+		b.add(new Color("Yavin Four Temple Throne Room", 1, 1, 1, 1, 1, 1, 200));
 		
 		b.add(new FreeParking());
-		b.add(new Color("Kentucky Ave", 0, 0, 0, 0, 0, 0, 220));
+		b.add(new Color("Cloud City Landing PLatform", 0, 0, 0, 0, 0, 0, 220));
 		b.add(new Card("Empire Card"));
-		b.add(new Color("Indiana Ave", 0, 0, 0, 0, 0, 0, 220));
-		b.add(new Color("Illinois Ave", 0, 0, 0, 0, 0, 0, 240));
+		b.add(new Color("Cloud City Carbon Freezing Chamber", 0, 0, 0, 0, 0, 0, 220));
+		b.add(new Color("Cloud City Reactor Control Room", 0, 0, 0, 0, 0, 0, 240));
 		b.add(new Railroad("X-Wing Fighter"));
 		b.add(new Color("Death Star Landing Bay", 0, 0, 0, 0, 0, 0, 260));
 		b.add(new Color("Death Star Throne Room", 0, 0, 0, 0, 0, 0, 260));
