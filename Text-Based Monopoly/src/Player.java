@@ -5,12 +5,14 @@ public class Player
 	private int money, playerNum, spot;
 	private String playerName;
 	private ArrayList<Square> properties;
+	private boolean isJail;
 	public Player(String o)
 		{
 		money = 1500;
 		playerName = o;
 		spot = 0;
 		properties = new ArrayList<Square>();
+		isJail = false;
 		}
 	public int getSpot()
 		{
@@ -60,5 +62,13 @@ public class Player
 	public void addProperty(Square temp)
 		{
 		properties.add(temp);
+		}
+	public boolean isJail()
+		{
+		return isJail;
+		}
+	public void setJail(boolean isJail)
+		{
+		this.isJail = isJail;
 		}
 	}

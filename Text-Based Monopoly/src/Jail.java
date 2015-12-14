@@ -8,6 +8,13 @@ public class Jail extends Square
 		}
 	public void runSquare(ArrayList<Player> players,int player, ArrayList<Square> b, int place)
 		{
-		
+		if(players.get(player).isJail() == true)
+			{
+			
+			}
+		else
+			{
+			
+			}
 		}
 	}
