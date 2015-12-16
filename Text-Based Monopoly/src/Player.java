@@ -6,6 +6,7 @@ public class Player
 	private String playerName;
 	private ArrayList<Square> properties;
 	private boolean isJail;
+	private boolean isReverse;
 	public Player(String o)
 		{
 		money = 1500;
@@ -13,6 +14,7 @@ public class Player
 		spot = 0;
 		properties = new ArrayList<Square>();
 		isJail = false;
+		isReverse = false;
 		}
 	public int getSpot()
 		{
@@ -70,5 +72,13 @@ public class Player
 	public void setJail(boolean isJail)
 		{
 		this.isJail = isJail;
+		}
+	public boolean isReverse()
+		{
+		return isReverse;
+		}
+	public void setReverse(boolean isReverse)
+		{
+		this.isReverse = isReverse;
 		}
 	}

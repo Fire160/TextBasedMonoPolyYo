@@ -27,7 +27,7 @@ public class ArrayMakers
 			b.add(new Color("Hoth Plains", 1 , 1, 1, 1, 1, 1, 100));
 			b.add(new Color("Hoth North Ridge", 1, 1, 1, 1, 1, 1, 120));
 			
-			b.add(new Jail());
+			b.add(new Jail("Death Star Holding Cell"));
 			b.add(new Color("Tatooine Lar's Homestand", 0, 0, 0, 0, 0, 0, 140));
 			b.add(new Utility("Reactor Core"));
 			b.add(new Color("Tatooine Mos Esiley", 0, 0, 0, 0, 0, 0, 140));
@@ -73,7 +73,7 @@ public class ArrayMakers
 	 		b.add(new Color("Vermont Ave.", 1 , 1, 1, 1, 1, 1, 0));
 	 		b.add(new Color("Connecticut Ave.", 1, 1, 1, 1, 1, 1, 0));
 	 		
-	 		b.add(new Jail());
+	 		b.add(new Jail("Jail"));
 			b.add(new Color("St. Charles Ave.", 0, 0, 0, 0, 0, 0, 0));
 	 		b.add(new Utility("Electric Company"));
 			b.add(new Color("States Ave.", 0, 0, 0, 0, 0, 0, 0));
