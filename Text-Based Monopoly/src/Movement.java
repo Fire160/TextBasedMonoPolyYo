@@ -12,7 +12,6 @@ public class Movement
 			System.out.println("Your current Properties: " + players.get(g).getProperties());
 			System.out.println("You are on "  + b.get(players.get(g).getSpot()).getName() + ". Press anything to roll the dice!");
 			Runner.things.nextLine();
-			Runner.things.nextLine();
 			int dieO = (int) (Math.random()*6) + 1;
 			int dieT = (int) (Math.random()*6) + 1;
 			int roll = dieO + dieT;
@@ -32,6 +31,7 @@ public class Movement
 						{
 						players.get(g).setMoney(players.get(g).getMoney() - 50);;
 						players.get(g).setJail(false);
+						Runner.things.nextLine();
 						}
 					}
 				}

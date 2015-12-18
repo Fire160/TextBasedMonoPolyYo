@@ -10,7 +10,7 @@ public class Jail extends Square
 		{
 		if(players.get(player).isJail() == true)
 			{
-			System.out.println("You are in " + b.get(10).getName() + " now bro.");
+			System.out.println("You are in " + b.get(10).getName() + " bro.");
 			}
 		if(players.get(player).isReverse() == true)
 			{

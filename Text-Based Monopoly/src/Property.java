@@ -22,6 +22,7 @@ public abstract class Property extends Square
 				players.get(player).setMoney(players.get(player).getMoney() - price);
 				isOwned = true;
 				players.get(player).addProperty(b.get(place));
+				Runner.things.nextLine();
 				}
 			else if(g == 1)
 				{
